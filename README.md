@@ -57,3 +57,5 @@ When the `refId` property of an element does not change, and it already exists i
 The format should be like this:
 
 `"refId": "clientName/source:itemType:itemId"`
+
+In ovos play, this is stored as the `external_reference_id` for each imported element.
