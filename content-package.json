@@ -1,0 +1,91 @@
+{
+  "$schema": "https://app.ovosplay.com/api/import-schema.json",
+  "meta": {
+    "time": "2022-02-16T09:02:41.513Z",
+    "version": 3
+  },
+  "cards": [
+    {
+      "refId": "client/csv:question:1",
+      "name": "Question 1",
+      "type": "TASK_FACT_OR_FICTION",
+      "randomize_answers": false,
+      "correct": true,
+      "assets": [
+        {
+          "refId": "client/csv:question:1:asset:1",
+          "content": "Question Text"
+        }
+      ],
+      "answers": []
+    },
+    {
+      "refId": "client/csv:question:2",
+      "name": "Question 2",
+      "type": "TASK_FACT_OR_FICTION",
+      "randomize_answers": false,
+      "correct": true,
+      "assets": [
+        {
+          "refId": "client/csv:question:2:asset:1",
+          "content": "Question Text"
+        }
+      ],
+      "answers": []
+    },
+    {
+      "refId": "client/csv:question:3",
+      "name": "Question 3",
+      "type": "TASK_FACT_OR_FICTION",
+      "randomize_answers": false,
+      "correct": false,
+      "assets": [
+        {
+          "refId": "client/csv:question:3:asset:1",
+          "content": "Question Text"
+        }
+      ],
+      "answers": []
+    }
+  ],
+  "decks": [
+    {
+      "refId": "client/csv:deck:Demo",
+      "name": "Demo",
+      "points": 50,
+      "duration": 5,
+      "practiceCards": [
+        {
+          "refId": "client/csv:question:2576",
+          "sort": 0
+        },
+        {
+          "refId": "client/csv:question:2577",
+          "sort": 1
+        },
+        {
+          "refId": "client/csv:question:2578",
+          "sort": 2
+        }
+      ]
+    }
+  ],
+  "library": [
+    {
+      "refId": "client/csv:library:1",
+      "type": "TOPIC",
+      "name": "A topic",
+      "active": true,
+      "children": [
+        {
+          "refId": "client/csv:library:2",
+          "type": "DECK",
+          "active": true,
+          "deck": {
+            "refId": "client/csv:deck:Demo"
+          }
+        }
+      ]
+    }
+  ]
+}
